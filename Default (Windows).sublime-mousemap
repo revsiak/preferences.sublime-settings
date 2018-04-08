@@ -1,0 +1,123 @@
+[
+	{
+		"button": "button1",
+		"count": 1,
+		"press_command": "drag_select",
+	},
+	{
+		"button": "button1",
+		"count": 1,
+		"modifiers": ["ctrl"],
+		"press_command": "drag_select",
+		"press_args": {"additive": true},
+	},
+	{
+		"button": "button2",
+		"count": 1,
+		"modifiers": ["ctrl"],
+		"press_command": "drag_select",
+		"press_args": {"subtractive": true},
+	},
+
+
+	{
+		"button": "button1",
+		"count": 1,
+		"modifiers": ["shift"],
+		"press_command": "drag_select",
+		"press_args": {"extend": true},
+	},
+	{
+		"button": "button2",
+		"count": 1,
+		"modifiers": ["shift"],
+		"press_command": "drag_select",
+		"press_args": {"extend": false},
+	},
+	
+	{
+		"button": "button1",
+		"count": 2,
+		"press_command": "drag_select",
+		"press_args": {"by": "words"},
+	},
+	{
+		"button": "button1",
+		"count": 2,
+		"modifiers": ["ctrl"],
+		"press_command": "drag_select",
+		"press_args": {"additive": true, "by": "words"}
+	},
+	{
+		"button": "button2",
+		"count": 1,
+		"modifiers": ["ctrl"],
+		"press_command": "drag_select",
+		"press_args": {"subtractive": true, "by": "words"},
+	},
+
+	{
+		"button": "button1",
+		"count": 3,
+		"press_command": "drag_select",
+		"press_args": {"by": "lines"},
+	},
+	{
+		"button": "button1",
+		"count": 3,
+		"modifiers": ["ctrl"],
+		"press_command": "drag_select",
+		"press_args": {"addititve": true, "by": "lines"},
+	},
+	{
+		"button": "button2",
+		"count": 3,
+		"modifiers": ["ctrl"],
+		"press_command": "drag_select",
+		"press_args": {"subtractive": true, "by": "lines"},
+	},
+
+	{
+		"button": "button1",
+		"count": 1,
+		"modifiers": ["alt"],
+		"press_command": "drag_select",
+		"command": "goto_definition",
+	},
+
+	{
+		"button": "scroll_up",
+		"count": 0,
+		"modifiers": ["ctrl"],
+		"command": "scroll_lines", 
+		"args": {"amount": 14.0},
+	},
+	{
+		"button": "scroll_up",
+		"count": 0,
+		"modifiers": ["ctrl", "shift"],
+		"command": "move",
+		"args": {"forward": false, "extend": true, "by": "lines"},
+	},
+	{
+		"button": "scroll_down",
+		"count": 0,
+		"modifiers": ["ctrl"],
+		"command": "scroll_lines",
+		"args": {"amount": -14.0},
+	},
+	{
+		"button": "scroll_down",
+		"count": 0,
+		"modifiers": ["ctrl", "shift"],
+		"command": "move",
+		"args": {"forward": true, "extend": true, "by": "lines"},
+	},
+
+	{
+		"button": "button1",
+		"count": 1,
+		"modifiers": ["button2"],
+		"command": "next_view_in_stack",
+	},
+]
