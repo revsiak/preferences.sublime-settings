@@ -1,0 +1,76 @@
+[
+	{"keys": ["ctrl+t"], "command": "new_file"},
+	{"keys": ["ctrl+shift+t"], "command": "reopen_last_file"},
+	{"keys": ["ctrl+shift+n"], "command": "new_window"},
+	{"keys": ["ctrl+w"], "command": "close_file"},
+	{"keys": ["ctrl+shift+w"], "command": "close_window"},
+
+	{"keys": ["ctrl+s"], "command": "save"},
+	{"keys": ["ctrl+shift+s"], "command": "prompt_save_as"},
+	
+	{"keys": ["ctrl+shift+o"], "command": "show_overlay", "args": {"overlay": "command_palette"}},
+	{"keys": ["ctrl+o"], "command": "unbound"},
+	{"keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}},
+	{"keys": ["ctrl+shift+p"], "command": "file_navigator"},
+
+
+	{"keys": ["ctrl+shift+1"], "command": "set_layout", "args": {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]]}},
+	{"keys": ["ctrl+shift+2"], "command": "set_layout", "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]}},
+	{"keys": ["ctrl+shift+3"], "command": "set_layout", "args": {"cols": [0.0, 0.33, 0.66, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]}},
+
+	{"keys": ["ctrl+alt+1"], "command": "set_layout", "args": {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]}},
+	{"keys": ["ctrl+alt+2"], "command": "set_layout", "args": {"cols": [0.0, 1.0], "rows": [0.0, 0.5, 1.0], "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]}},
+	{"keys": ["ctrl+alt+3"], "command": "set_layout", "args": {"cols": [0.0, 1.0], "rows": [0.0, 0.33, 0.66, 1.0], "cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]}},
+
+	
+	{"keys": ["ctrl+b"], "command": "build", "args": {"select": true}},
+	{"keys": ["ctrl+shift+b"], "command": "cancel_build"},
+
+	{"keys": ["ctrl+z"], "command": "undo"},
+	{"keys": ["ctrl+y"], "command": "redo_or_repeat"},
+
+	{"keys": ["ctrl+x"], "command": "cut"},
+	{"keys": ["ctrl+c"], "command": "copy"},
+	{"keys": ["ctrl+v"], "command": "paste_and_indent"},
+
+	{"keys": ["backspace"], "command": "left_delete"},
+	{"keys": ["delete"], "command": "right_delete"},
+
+	{"keys": ["left"], "command": "move", "args": {"by": "characters", "forward": false}},
+	{"keys": ["right"], "command": "move", "args": {"by": "characters", "forward": true}},
+	{"keys": ["up"], "command": "move", "args": {"by": "lines", "forward": false}},
+	{"keys": ["down"], "command": "move", "args": {"by": "lines", "forward": true}},
+
+	{"keys": ["shift+left"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true}},
+	{"keys": ["shift+right"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true}},
+	{"keys": ["shift+up"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true}},
+	{"keys": ["shift+down"], "command": "move", "args": {"by": "word_ends", "forward": false, "extend": true}},
+
+	{"keys": ["ctrl+left"], "command": "move", "args": {"by": "words", "forward": false}},
+	{"keys": ["ctrl+right"], "command": "move", "args": {"by": "word_ends", "forward": true}},
+	{"keys": ["ctrl+up"],  "command": "expand_selection", "args": {"to": "scope"}},
+	{"keys": ["ctrl+down"], "command": "single_selection"},
+
+	{"keys": ["alt+left"], "command": "move", "args": {"by": "subwords", "forward": false}},
+	{"keys": ["alt+right"], "command": "move", "args": {"by": "subword_ends", "forward": true}},
+	{"keys": ["alt+up"], "command": "move", "args": {"by": "words", "forward": false}},
+	{"keys": ["alt+down"], "command": "move", "args": {"by": "words", "forward": true}},
+
+	{"keys": ["ctrl+shift+left"], "command": "move", "args": {"by": "words", "forward": true, "extend": true}},
+	{"keys": ["ctrl+shift+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true}},
+	{"keys": ["ctrl+shift+up"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true}},
+	{"keys": ["ctrl+shift+down"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true}},
+
+	{"keys": ["home"], "command": "move_to", "args": {"to": "bol", "extend": false}},
+	{"keys": ["end"], "command": "move_to", "args": {"to": "eol", "extend": false}},
+
+	{"keys": ["pageup"], "command": "move", "args": {"by": "pages", "forward": false}},
+	{"keys": ["pagedown"], "command": "move", "args": {"by": "pages", "forward": true}},
+
+	{"keys": ["ctrl+a"], "command": "select_all"},
+
+	{"keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false}},
+	{"keys": ["f1"], "command": "find_prev"},
+	{"keys": ["f3"], "command": "find_next"},
+	{"keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false}},
+]
