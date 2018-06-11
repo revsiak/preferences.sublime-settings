@@ -22,9 +22,9 @@
 	"line_numbers": true,
 	"margin": 2,
 
-	"rulers": [110],
+	"rulers": [140],
 	"word_wrap": "true",
-	"wrap_width": 110,
+	"wrap_width": 140,
 
 	"tab_size": 4,
 	"translate_tabs_to_spaces": false,
