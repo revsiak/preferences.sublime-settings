@@ -23,7 +23,7 @@
 	"margin": 2,
 
 	"rulers": [110],
-	"word_wrap": "auto",
+	"word_wrap": "true",
 	"wrap_width": 110,
 
 	"tab_size": 4,
